@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body {
+  background: url('xx.jpeg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.title-board {
+  background: url('heart.png') no-repeat center center;
+  background-size: 45%; /* smaller heart — try between 40% and 55% */
+  width: 1200px;
+  height: 1000px;
+  margin: 0 auto 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  font-size: 34px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px #fff;
+  position: relative;
+}
+
+/* Button style (works for both <button> and <a>) */
+.btn {
+  display: inline-block;
+  background-color: #8b0000;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: -250px;
+  margin: 0 10px;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to bottom, #ff4d4d, #cc0000);
+}
